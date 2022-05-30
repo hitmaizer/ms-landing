@@ -30,7 +30,7 @@ const GlobalStyle = createGlobalStyle`
   
   @supports (font-variation-settings: normal) {
     html {
-      font-family: "Montserrat", sans-serif;
+      font-family: "Archivo", sans-serif;
       scroll-behavior: smooth;
     }
   }
