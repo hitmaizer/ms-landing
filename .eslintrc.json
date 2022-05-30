@@ -3,9 +3,6 @@
     "next/core-web-vitals",
     "eslint:recommended",
     "prettier",
-    "airbnb",
-    "plugin:prettier/recommended",
-    "prettier",
     "plugin:@typescript-eslint/recommended"
   ],
   "overrides": [
