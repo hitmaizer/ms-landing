@@ -1,10 +1,12 @@
-import type { NextPage } from "next";
+import type { NextPage } from 'next';
+import Heading from 'src/components/Heading';
+import Text from 'src/components/Text';
 
 const Home: NextPage = () => {
   return (
     <div>
-      <h1>Hello mate!</h1>
-      <p>This is the Homepage</p>
+      <Heading size="2xl">MÁRIO SANTOS GROUP</Heading>
+      <Text fontWeight="bold">This is the Homepage</Text>
     </div>
   );
 };
