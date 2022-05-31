@@ -18,8 +18,8 @@ export const Text = styled.p<TextProps>`
   ${textTransform}
   ${fontWeight}
   font-family: ${({ theme }) => theme.fonts.archivo};
-  line-height: 32px;
-  font-size: 18px;
-  max-width: 730px;
   font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  max-width: 406px;
 `;
