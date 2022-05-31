@@ -12,12 +12,6 @@ export const StyledImage = styled(Image)`
   position: absolute;
   object-fit: cover;
   z-index: 1;
-  background: linear-gradient(
-    180deg,
-    rgba(0, 0, 0, 1) 0%,
-    rgba(255, 255, 255, 0.3477766106442577) 48%,
-    rgba(0, 0, 0, 1) 100%
-  );
 `;
 
 export const Content = styled.div`
