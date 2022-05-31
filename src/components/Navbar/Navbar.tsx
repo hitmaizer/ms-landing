@@ -9,7 +9,7 @@ const Navbar = ({ children, ...rest }: NavbarProps) => {
   return (
     <S.Navbar {...rest}>
       <Stack display="flex" justifyContent="space-between" width="100%">
-        <Heading size="2xl" color="#fff">
+        <Heading size="lg" color="#fff">
           MÁRIO SANTOS GROUP
         </Heading>
         <Socials />

@@ -9,12 +9,18 @@ import { HeroProps } from './Hero.types';
 const Hero = ({ children, ...rest }: HeroProps) => {
   return (
     <S.Hero {...rest}>
-      <S.StyledImage src="/placeholder.png" layout="fill" />
+      <S.StyledImage src="/placeholder-overlay.png" layout="fill" />
       <Stack display="flex" alignItems="center">
         <S.Content>
-          <Heading color="#fff" fontWeight="bold" size="4xl">
-            Headline 1
-          </Heading>
+          <Stack>
+            <Heading color="#fff" size="4xl">
+              QUARTETO
+              <br /> MÁRIO SANTOS:
+            </Heading>
+            <Heading color="#fff" size="4xl" fontWeight="regular">
+              BLOCO A4
+            </Heading>
+          </Stack>
           <Text fontWeight="bold" color="#fff">
             From the traditional jazz quartet with the guitar as a harmonic
             instrument, QMS looks for their own groundbreaking new sound. The
