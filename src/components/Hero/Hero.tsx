@@ -23,7 +23,15 @@ const Hero = ({ children, ...rest }: HeroProps) => {
             playing. The quartet was brought together under the musical empathy
             they achieve in their regular jams.
           </Text>
-          <Button outline>BUY HERE</Button>
+          <Button outline>
+            <a
+              href="https://mariosantos.bandcamp.com/album/quarteto-m-rio-santos-n-vem"
+              target="_blank"
+              rel="noreferrer"
+            >
+              BUY HERE
+            </a>
+          </Button>
           {children}
         </S.Content>
         <S.IFrame
