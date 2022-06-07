@@ -12,4 +12,5 @@ export interface BlockProps
     LayoutProps,
     GridGapProps {
   children?: ReactNode;
+  hero?: boolean;
 }
