@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import { color, fontWeight, space, style, typography } from 'styled-system';
 
 import { TextProps } from './Text.types';
@@ -17,11 +17,17 @@ export const Text = styled.p<TextProps>`
   ${space}
   ${textTransform}
   ${fontWeight}
-  
+
   font-family: ${({ theme }) => theme.fonts.text};
   font-size: 16px;
   line-height: 24px;
-  max-width: 900px;
+  max-width: 75ch;
   color: ${({ theme }) => theme.colors.mutedGray};
   transition: color 300ms ease;
+
+  ${({ textBlock }) =>
+    textBlock &&
+    css`
+      font-weight: 500;
+    `}
 `;
