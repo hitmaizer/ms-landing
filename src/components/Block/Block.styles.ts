@@ -11,13 +11,15 @@ export const Block = styled.div<BlockProps>`
   display: flex;
   align-items: center;
   background-color: ${({ theme }) => theme.colors.purpleBg};
-  border: 1px solid ${({ theme }) => theme.colors.stroke};
+  outline: 1px solid ${({ theme }) => theme.colors.stroke};
   padding: 24px;
   min-height: 12vh;
-
+  height: 100%;
+  outline-offset: 0.5px;
   ${({ hero }) =>
     hero &&
     css`
-      padding: 0;
-    `}
+      padding: 0px;
+      outline-offset: 0px;
+    `};
 `;
