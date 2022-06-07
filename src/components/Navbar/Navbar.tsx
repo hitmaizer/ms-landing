@@ -4,16 +4,22 @@ import * as S from './Navbar.styles';
 import Heading from '../Heading';
 import Stack from '../Stack';
 import Socials from '../Socials';
+import Block from '../Block';
 
 const Navbar = ({ children, ...rest }: NavbarProps) => {
   return (
     <S.Navbar {...rest}>
-      <Stack display="flex" justifyContent="space-between" width="100%">
-        <Heading size="lg" color="#fff">
-          MÁRIO SANTOS GROUP
-        </Heading>
-        <Socials />
+      <Stack display="flex">
+        <Block>
+          <Heading size="lg" color="#fff">
+            MÁRIO SANTOS GROUP
+          </Heading>
+        </Block>
+        <Block>
+          <Socials />
+        </Block>
       </Stack>
+
       {children}
     </S.Navbar>
   );
