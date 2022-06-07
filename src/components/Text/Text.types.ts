@@ -10,4 +10,5 @@ export interface TextProps extends TypographyProps, SpaceProps, LayoutProps {
   textTransform?: 'none' | 'uppercase' | 'lowercase' | 'capitalize';
   color?: string;
   card?: boolean;
+  textBlock?: boolean;
 }
