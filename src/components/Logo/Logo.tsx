@@ -7,7 +7,7 @@ const Logo = ({ children, ...rest }: LogoProps) => {
   return (
     <S.Logo {...rest}>
       <Block>
-        <S.SImage src="/margins.svg" width="389px" height="20px" alt="logo" />
+        <S.SImage src="/msg-logo.svg" width="411px" height="20px" alt="logo" />
       </Block>
       {children}
     </S.Logo>

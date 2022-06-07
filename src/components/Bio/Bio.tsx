@@ -3,18 +3,15 @@ import Block from '../Block';
 import Text from '../Text';
 import * as S from './Bio.styles';
 import { BioProps } from './Bio.types';
+import { useTranslation } from 'react-i18next';
 
 const Bio = ({ children, ...rest }: BioProps) => {
+  const { t } = useTranslation();
   return (
     <S.Bio {...rest}>
       <Block>
         <Text textBlock ml="2%">
-          From the traditional jazz quartet with the guitar as a harmonic
-          instrument, QMS looks for their own groundbreaking new sound. The main
-          focus in this project is still giving free pass to the musicians to
-          express themselves over the themes they&apos;re playing. The quartet
-          was brought together under the musical empathy they achieve in their
-          regular jams.
+          {t('bio')}
         </Text>
         {children}
       </Block>

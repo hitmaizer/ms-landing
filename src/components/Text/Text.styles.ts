@@ -29,5 +29,7 @@ export const Text = styled.p<TextProps>`
     textBlock &&
     css`
       font-weight: 500;
+      color: ${({ theme }) => theme.colors.mutedGray};
+      line-height: 160%;
     `}
 `;
