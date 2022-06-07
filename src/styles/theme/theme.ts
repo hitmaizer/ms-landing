@@ -17,8 +17,8 @@ const theme = {
     gray900: '#18181B',
     offWhite: '#F2F2F2',
     mutedGray: '#777981',
-    stroke: '#1E2435',
-    purpleBg: '#050A18',
+    stroke: '#2A2A2A',
+    purpleBg: '#121111',
   },
   dropShadow: '',
 };
