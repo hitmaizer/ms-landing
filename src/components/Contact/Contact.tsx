@@ -9,7 +9,9 @@ const Contact = ({ children, ...rest }: ContactProps) => {
     <S.Contact {...rest}>
       <a href="mailto:maritosan@gmail.com">
         <Block display="flex" alignItems="center" justifyContent="center">
-          <Text textTransform="uppercase">Get in touch</Text>
+          <Text textTransform="uppercase" fontWeight="600">
+            Get in touch
+          </Text>
           {children}
         </Block>
       </a>

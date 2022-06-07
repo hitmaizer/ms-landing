@@ -18,7 +18,9 @@ const Store = ({ children, ...rest }: StoreProps) => {
           gridGap="8px"
           justifyContent="center"
         >
-          <Text textTransform="uppercase">Store</Text>
+          <Text textTransform="uppercase" fontWeight="bold">
+            Store
+          </Text>
           <S.Arrow />
           {children}
         </Block>
