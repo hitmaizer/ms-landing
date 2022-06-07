@@ -20,8 +20,8 @@ export const Text = styled.p<TextProps>`
   font-family: ${({ theme }) => theme.fonts.text};
   font-weight: 700;
   font-size: 16px;
-  line-height: 20px;
-
+  line-height: 24px;
+  max-width: 1170px;
   color: ${({ theme }) => theme.colors.mutedGray};
   transition: color 300ms ease;
 `;

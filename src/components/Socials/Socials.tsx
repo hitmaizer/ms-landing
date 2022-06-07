@@ -10,7 +10,7 @@ const Socials = ({ children, ...rest }: SocialsProps) => {
         display="flex"
         alignItems="center"
         justifyContent="center"
-        gridGap="16px"
+        gridGap="8px"
       >
         <a
           href="https://www.youtube.com/channel/UCPTVjhv0hpFRH9DGgdsOnwQ"
