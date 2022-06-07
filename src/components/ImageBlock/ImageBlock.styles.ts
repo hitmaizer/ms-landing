@@ -8,5 +8,5 @@ export const ImageBlock = styled.div`
 
 export const StyledImage = styled(Image)`
   object-fit: cover;
-  object-position: top;
+  object-position: center;
 `;
