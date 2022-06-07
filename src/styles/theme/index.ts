@@ -17,6 +17,10 @@ const theme = {
     gray700: '#3F3F46',
     gray800: '#27272A',
     gray900: '#18181B',
+    offWhite: '#F2F2F2',
+    mutedGray: '#777981',
+    stroke: '#2A2A2A',
+    purpleBg: '#121111',
   },
 
   // default fontSizes

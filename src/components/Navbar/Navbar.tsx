@@ -1,19 +1,16 @@
 import React from 'react';
 import { NavbarProps } from './Navbar.types';
 import * as S from './Navbar.styles';
-import Heading from '../Heading';
-import Stack from '../Stack';
-import Socials from '../Socials';
+import Contact from '../Contact';
+import Logo from '../Logo';
+import Store from '../Store';
 
 const Navbar = ({ children, ...rest }: NavbarProps) => {
   return (
     <S.Navbar {...rest}>
-      <Stack display="flex" justifyContent="space-between" width="100%">
-        <Heading size="lg" color="#fff">
-          MÁRIO SANTOS GROUP
-        </Heading>
-        <Socials />
-      </Stack>
+      <Logo />
+      <Contact />
+      <Store />
       {children}
     </S.Navbar>
   );

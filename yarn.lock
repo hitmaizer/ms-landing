@@ -86,7 +86,7 @@
     core-js-pure "^3.20.2"
     regenerator-runtime "^0.13.4"
 
-"@babel/runtime@^7.10.2", "@babel/runtime@^7.10.5", "@babel/runtime@^7.15.3", "@babel/runtime@^7.15.4", "@babel/runtime@^7.16.3":
+"@babel/runtime@^7.10.2", "@babel/runtime@^7.10.5", "@babel/runtime@^7.14.5", "@babel/runtime@^7.15.3", "@babel/runtime@^7.15.4", "@babel/runtime@^7.16.3", "@babel/runtime@^7.17.2":
   version "7.18.3"
   resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.18.3.tgz#c7b654b57f6f63cf7f8b418ac9ca04408c4579f4"
   integrity sha512-38Y8f7YUhce/K7RMwTp7m0uCumpv9hZkitCbBClqQIow1qSbCvGkcegKOXpEWCQLfWmevgRiWokZ1GkpfhbZug==
@@ -180,10 +180,10 @@
   resolved "https://registry.yarnpkg.com/@fontsource/archivo-black/-/archivo-black-4.5.7.tgz#e58a1532442823be04331b457aa71febb8c03e11"
   integrity sha512-N1cgWtZ2HTtCcP5T4EqJW/ZrW28P6+3W0lf3IwdO+EuwPfMQ6udfefoftB7yW4pV5OR8tGKT9SPQQY8G/u4YDg==
 
-"@fontsource/archivo@^4.5.7":
-  version "4.5.7"
-  resolved "https://registry.yarnpkg.com/@fontsource/archivo/-/archivo-4.5.7.tgz#7333d717b7c7d90366c19e50339ccb87aa0eb88e"
-  integrity sha512-OTte/P/6rCVzW917JR0CvgVohh/xGkWIks/TZRoyg7vnEWi/enwOfXxJOj4uJRWpORft9kwF6WJXBmSVceC0bw==
+"@fontsource/space-grotesk@^4.5.8":
+  version "4.5.8"
+  resolved "https://registry.yarnpkg.com/@fontsource/space-grotesk/-/space-grotesk-4.5.8.tgz#4f3c6a80bbd556e73338eadf2f19f214657580b5"
+  integrity sha512-2+eifFW1dlCGo/zq4xNFNEMrQEfX6rdC39S5t+jSrpRhBnocgr1m8QNBnaM6gok9c+78bUurJ3BjDgC/+WpIAQ==
 
 "@humanwhocodes/config-array@^0.9.2":
   version "0.9.5"
@@ -333,6 +333,14 @@
   version "10.38.0"
   resolved "https://registry.yarnpkg.com/@styled-icons/boxicons-logos/-/boxicons-logos-10.38.0.tgz#f51442c49f1a28c61927d6d2f8c1e2d7946faf46"
   integrity sha512-DpkUi9qV76RsyuzihQhfCho142WCxK/2oUfjcqo6BsP92qxV+4rtS5nfVsmqfnSEef4av+qSeg33fJWDyURyKg==
+  dependencies:
+    "@babel/runtime" "^7.15.3"
+    "@styled-icons/styled-icon" "^10.6.3"
+
+"@styled-icons/boxicons-regular@^10.38.0":
+  version "10.38.0"
+  resolved "https://registry.yarnpkg.com/@styled-icons/boxicons-regular/-/boxicons-regular-10.38.0.tgz#1eb80b4f94a18a9b77b11dee5204aa23378d37ec"
+  integrity sha512-xjhafoa0/EeYtQOyTw+ohuSlBx599t8l8++JH1tQlM0l73dP4icTpF4znYL+HhZeaUe3D+UhrkfWuBBua2w2Qw==
   dependencies:
     "@babel/runtime" "^7.15.3"
     "@styled-icons/styled-icon" "^10.6.3"
@@ -1504,6 +1512,18 @@ hoist-non-react-statics@^3.0.0, hoist-non-react-statics@^3.3.0:
   dependencies:
     react-is "^16.7.0"
 
+html-escaper@^2.0.2:
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/html-escaper/-/html-escaper-2.0.2.tgz#dfd60027da36a36dfcbe236262c00a5822681453"
+  integrity sha512-H2iMtd0I4Mt5eYiapRdIDjp+XzelXQ0tFE4JS7YFwFevXXMmOp9myNrUvCg0D6ws8iqkRPBfKHgbwig1SmlLfg==
+
+html-parse-stringify@^3.0.1:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/html-parse-stringify/-/html-parse-stringify-3.0.1.tgz#dfc1017347ce9f77c8141a507f233040c59c55d2"
+  integrity sha512-KknJ50kTInJ7qIScF3jeaFRpMpE8/lfiTdzf/twXyPBLAGrLRTmkz3AdTnKeh40X8k9L2fdYwEp/42WGXIRGcg==
+  dependencies:
+    void-elements "3.1.0"
+
 human-signals@^2.1.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/human-signals/-/human-signals-2.1.0.tgz#dc91fcba42e4d06e4abaed33b3e7a3c02f514ea0"
@@ -1513,6 +1533,13 @@ husky@^7.0.0:
   version "7.0.4"
   resolved "https://registry.yarnpkg.com/husky/-/husky-7.0.4.tgz#242048245dc49c8fb1bf0cc7cfb98dd722531535"
   integrity sha512-vbaCKN2QLtP/vD4yvs6iz6hBEo6wkSzs8HpRah1Z6aGmF2KW5PdYuAd7uX5a+OyBZHBhd+TFLqgjUgytQr4RvQ==
+
+i18next@^21.8.9:
+  version "21.8.9"
+  resolved "https://registry.yarnpkg.com/i18next/-/i18next-21.8.9.tgz#c79edd5bba61e0a0d5b43a93d52e2d13a526de82"
+  integrity sha512-PY9a/8ADVmnju1tETeglbbVQi+nM5pcJQWm9kvKMTE3GPgHHtpDsHy5HQ/hccz2/xtW7j3vuso23JdQSH0EttA==
+  dependencies:
+    "@babel/runtime" "^7.17.2"
 
 ignore@^5.2.0:
   version "5.2.0"
@@ -2129,6 +2156,15 @@ react-dom@^17.0.2:
     object-assign "^4.1.1"
     scheduler "^0.20.2"
 
+react-i18next@^11.17.0:
+  version "11.17.0"
+  resolved "https://registry.yarnpkg.com/react-i18next/-/react-i18next-11.17.0.tgz#44a0689dac7903352733e40303b743fa465eb797"
+  integrity sha512-ewq2S4bVUTRqOMAdM/XvzCn9xUPIryzeBQRghmJ8lC6VI/8Kp7z1GwoLyt8j7GB2ywhN2SjPk7LU4sHzVeu7aw==
+  dependencies:
+    "@babel/runtime" "^7.14.5"
+    html-escaper "^2.0.2"
+    html-parse-stringify "^3.0.1"
+
 react-is@^16.13.1, react-is@^16.7.0:
   version "16.13.1"
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.13.1.tgz#789729a4dc36de2999dc156dd6c1d9c18cea56a4"
@@ -2554,6 +2590,11 @@ v8-compile-cache@^2.0.3:
   version "2.3.0"
   resolved "https://registry.yarnpkg.com/v8-compile-cache/-/v8-compile-cache-2.3.0.tgz#2de19618c66dc247dcfb6f99338035d8245a2cee"
   integrity sha512-l8lCEmLcLYZh4nbunNZvQCJc5pv7+RCwa8q/LdUx8u7lsWvPDKmpodJAJNwkAhJC//dFY48KuIEmjtd4RViDrA==
+
+void-elements@3.1.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/void-elements/-/void-elements-3.1.0.tgz#614f7fbf8d801f0bb5f0661f5b2f5785750e4f09"
+  integrity sha1-YU9/v42AHwu18GYfWy9XhXUOTwk=
 
 which-boxed-primitive@^1.0.2:
   version "1.0.2"
