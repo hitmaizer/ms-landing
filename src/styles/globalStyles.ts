@@ -26,12 +26,14 @@ const GlobalStyle = createGlobalStyle`
   
   * {
     box-sizing: border-box;
+    
   }
   
   @supports (font-variation-settings: normal) {
     html {
       font-family: "Archivo", sans-serif;
       scroll-behavior: smooth;
+      overflow: hidden;
     }
   }
   
