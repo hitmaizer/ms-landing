@@ -14,7 +14,7 @@ export const Store = styled.div`
   ${space}
   ${layout}
   ${gridGap}
-  width: 25vw;
+  width: 12.5vw;
   cursor: pointer;
   &:hover {
     p,
