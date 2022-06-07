@@ -17,11 +17,11 @@ export const Text = styled.p<TextProps>`
   ${space}
   ${textTransform}
   ${fontWeight}
+  
   font-family: ${({ theme }) => theme.fonts.text};
-  font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  max-width: 1170px;
+  max-width: 900px;
   color: ${({ theme }) => theme.colors.mutedGray};
   transition: color 300ms ease;
 `;
