@@ -1,5 +1,5 @@
 export const translationsPt = {
-  bio: 'Este quarteto surge em 2009, a par do seu primeiro projecto com edição discográfica (QMS “Bloco de Notas” - Encomenda) e pretende da mesma forma interpretar e dar a conhecer temas do seu bloco de notas. Do quarteto tradicional de Jazz com a guitarra como instrumento harmónico Mário Santos procura uma sonoridade própria e inovadora. O grande objectivo continua a ser o de criar momentos em que os músicos possuem toda a liberdade de se expressar sobre os temas que interpretam. Este quarteto nasce da cumplicidade sonora encontrada na regularidade dos seus encontros musicais.',
+  bio: 'Este quarteto surge em 2009, a par do seu primeiro projecto com edição discográfica (QMS “Bloco de Notas” - Encomenda) e pretende da mesma forma interpretar e dar a conhecer temas do seu bloco de notas. Do quarteto tradicional de Jazz com a guitarra como instrumento harmónico Mário Santos procura uma sonoridade própria e inovadora.',
   store: 'Loja',
   contact: 'Contacto',
 };
