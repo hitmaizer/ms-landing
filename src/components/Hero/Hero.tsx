@@ -8,7 +8,7 @@ import { HeroProps } from './Hero.types';
 const Hero = ({ children, ...rest }: HeroProps) => {
   return (
     <S.Hero {...rest}>
-      <Stack display="flex" alignItems="center">
+      <Stack display="flex" alignItems="center" height="100%">
         <ImageBlock hero />
         <WidgetBlock hero />
         {children}
