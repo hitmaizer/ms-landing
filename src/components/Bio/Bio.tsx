@@ -8,7 +8,7 @@ const Bio = ({ children, ...rest }: BioProps) => {
   return (
     <S.Bio {...rest}>
       <Block>
-        <Text fontWeight="regular">
+        <Text textBlock ml="2%">
           From the traditional jazz quartet with the guitar as a harmonic
           instrument, QMS looks for their own groundbreaking new sound. The main
           focus in this project is still giving free pass to the musicians to

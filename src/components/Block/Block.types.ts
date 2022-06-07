@@ -13,4 +13,5 @@ export interface BlockProps
     GridGapProps {
   children?: ReactNode;
   hero?: boolean;
+  button?: boolean;
 }
