@@ -25,6 +25,7 @@ export const Block = styled.div<BlockProps>`
   ${({ button }) =>
     button &&
     css`
+      cursor: pointer;
       min-height: auto;
       place-content: center;
       &:hover {
