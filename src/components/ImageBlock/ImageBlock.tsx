@@ -8,7 +8,7 @@ const ImageBlock = ({ children, hero, ...rest }: ImageBlockProps) => {
   return (
     <S.ImageBlock {...rest}>
       <Block hero={hero}>
-        <Box width="70vw" height="62vh" position="relative">
+        <Box width="75vw" height="100%" position="relative">
           <S.StyledImage src="/placeholder-overlay.png" layout="fill" />
         </Box>
         {children}
