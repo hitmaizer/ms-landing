@@ -6,5 +6,5 @@ export const Logo = styled.div`
 `;
 
 export const SImage = styled(Image)`
-  margin-left: 2%;
+  padding-left: 3% !important;
 `;
