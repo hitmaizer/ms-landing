@@ -1,6 +1,6 @@
 import React from 'react';
 import Bio from '../Bio';
-import Store from '../Store';
+import Socials from '../Socials';
 import * as S from './Footer.styles';
 import { FooterProps } from './Footer.types';
 
@@ -8,7 +8,7 @@ const Footer = ({ children, ...rest }: FooterProps) => {
   return (
     <S.Footer display="flex" {...rest}>
       <Bio />
-      <Store />
+      <Socials />
       {children}
     </S.Footer>
   );
