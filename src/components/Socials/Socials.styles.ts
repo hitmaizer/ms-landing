@@ -8,7 +8,7 @@ export const Socials = styled.div`
   align-items: center;
   justify-content: center;
   gap: 16px;
-  width: 12.5vw;
+  width: 25vw;
 `;
 
 export const YTLogo = styled(Youtube)`
