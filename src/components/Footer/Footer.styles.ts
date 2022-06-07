@@ -6,5 +6,5 @@ export const Footer = styled.div`
   ${layout}
   ${space}
   width: 100%;
-  height: 20vh;
+  height: 18vh;
 `;
