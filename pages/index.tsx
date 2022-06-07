@@ -1,6 +1,7 @@
 import type { NextPage } from 'next';
 import { Router } from 'next/router';
 import { useState } from 'react';
+import Footer from 'src/components/Footer';
 import Hero from 'src/components/Hero';
 import Navbar from 'src/components/Navbar';
 
@@ -23,6 +24,7 @@ const Home: NextPage = () => {
         <>
           <Navbar display="flex" />
           <Hero />
+          <Footer display="flex" />
         </>
       )}
     </>
