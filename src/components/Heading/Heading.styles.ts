@@ -30,8 +30,8 @@ const size = variant({
 });
 
 export const Heading = styled.h1<HeadingProps>`
-  font-family: ${({ theme }) => theme.fonts.archivo};
-  font-weight: 900;
+  font-family: ${({ theme }) => theme.fonts.heading};
+
   ${textAlign}
   ${typography}
   ${space}
