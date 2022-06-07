@@ -20,4 +20,10 @@ export const Button = styled.button<ButtonProps>`
         color: ${({ theme }) => theme.colors.offWhite};
       }
     `};
+  ${({ ident, currLang }) =>
+    currLang === ident &&
+    css`
+      color: ${({ theme }) => theme.colors.offWhite};
+      text-shadow: rgb(255 255 255 / 30%) 0px 0px 12px;
+    `}
 `;
