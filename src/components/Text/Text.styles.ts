@@ -18,8 +18,10 @@ export const Text = styled.p<TextProps>`
   ${textTransform}
   ${fontWeight}
   font-family: ${({ theme }) => theme.fonts.text};
-  font-weight: 400;
+  font-weight: 700;
   font-size: 16px;
-  line-height: 26px;
-  max-width: 406px;
+  line-height: 20px;
+
+  color: ${({ theme }) => theme.colors.mutedGray};
+  transition: color 300ms ease;
 `;
