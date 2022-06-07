@@ -1,10 +1,6 @@
 import '@fontsource/archivo-black/400.css';
-import '@fontsource/archivo/100.css';
-import '@fontsource/archivo/200.css';
-import '@fontsource/archivo/300.css';
-import '@fontsource/archivo/400.css';
-import '@fontsource/archivo/500.css';
-import '@fontsource/archivo/600.css';
-import '@fontsource/archivo/700.css';
-import '@fontsource/archivo/800.css';
-import '@fontsource/archivo/900.css';
+import '@fontsource/space-grotesk/300.css';
+import '@fontsource/space-grotesk/400.css';
+import '@fontsource/space-grotesk/500.css';
+import '@fontsource/space-grotesk/600.css';
+import '@fontsource/space-grotesk/700.css';
