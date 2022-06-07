@@ -180,10 +180,10 @@
   resolved "https://registry.yarnpkg.com/@fontsource/archivo-black/-/archivo-black-4.5.7.tgz#e58a1532442823be04331b457aa71febb8c03e11"
   integrity sha512-N1cgWtZ2HTtCcP5T4EqJW/ZrW28P6+3W0lf3IwdO+EuwPfMQ6udfefoftB7yW4pV5OR8tGKT9SPQQY8G/u4YDg==
 
-"@fontsource/archivo@^4.5.7":
-  version "4.5.7"
-  resolved "https://registry.yarnpkg.com/@fontsource/archivo/-/archivo-4.5.7.tgz#7333d717b7c7d90366c19e50339ccb87aa0eb88e"
-  integrity sha512-OTte/P/6rCVzW917JR0CvgVohh/xGkWIks/TZRoyg7vnEWi/enwOfXxJOj4uJRWpORft9kwF6WJXBmSVceC0bw==
+"@fontsource/space-grotesk@^4.5.8":
+  version "4.5.8"
+  resolved "https://registry.yarnpkg.com/@fontsource/space-grotesk/-/space-grotesk-4.5.8.tgz#4f3c6a80bbd556e73338eadf2f19f214657580b5"
+  integrity sha512-2+eifFW1dlCGo/zq4xNFNEMrQEfX6rdC39S5t+jSrpRhBnocgr1m8QNBnaM6gok9c+78bUurJ3BjDgC/+WpIAQ==
 
 "@humanwhocodes/config-array@^0.9.2":
   version "0.9.5"
