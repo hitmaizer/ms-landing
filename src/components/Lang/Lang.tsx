@@ -15,21 +15,13 @@ const Lang = ({ children, ...rest }: LangProps) => {
 
   return (
     <S.Lang display="flex" flexDirection="column" {...rest}>
-      <Block button>
-        <Button
-          onClick={() => i18n.changeLanguage('pt')}
-          ident="pt"
-          currLang={currentLang}
-        >
+      <Block button onClick={() => i18n.changeLanguage('pt')}>
+        <Button ident="pt" currLang={currentLang}>
           PT
         </Button>
       </Block>
-      <Block button>
-        <Button
-          onClick={() => i18n.changeLanguage('en')}
-          ident="en"
-          currLang={currentLang}
-        >
+      <Block button onClick={() => i18n.changeLanguage('en')}>
+        <Button ident="en" currLang={currentLang}>
           EN
         </Button>
       </Block>

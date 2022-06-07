@@ -14,4 +14,5 @@ export interface BlockProps
   children?: ReactNode;
   hero?: boolean;
   button?: boolean;
+  onClick?: () => unknown;
 }
