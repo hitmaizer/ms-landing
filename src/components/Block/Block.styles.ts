@@ -22,4 +22,15 @@ export const Block = styled.div<BlockProps>`
       padding: 0px;
       outline-offset: 0px;
     `};
+  ${({ button }) =>
+    button &&
+    css`
+      min-height: auto;
+      place-content: center;
+      &:hover {
+        button {
+          color: ${({ theme }) => theme.colors.offWhite};
+        }
+      }
+    `}
 `;
