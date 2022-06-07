@@ -10,4 +10,5 @@ export const IFrame = styled.iframe`
   width: 25vw;
   height: 100%;
   z-index: 2;
+  max-width: 480px;
 `;
