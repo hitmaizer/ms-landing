@@ -18,7 +18,7 @@ export const Text = styled.p<TextProps>`
   ${textTransform}
   ${fontWeight}
   font-family: ${({ theme }) => theme.fonts.text};
-  font-weight: 700;
+  font-weight: 400;
   font-size: 16px;
   line-height: 24px;
   max-width: 1170px;
