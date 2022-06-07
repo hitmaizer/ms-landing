@@ -1,6 +1,15 @@
 import { ReactNode } from 'react';
-import { FlexboxProps, LayoutProps, SpaceProps } from 'styled-system';
+import {
+  FlexboxProps,
+  GridGapProps,
+  LayoutProps,
+  SpaceProps,
+} from 'styled-system';
 
-export interface BlockProps extends FlexboxProps, SpaceProps, LayoutProps {
+export interface BlockProps
+  extends FlexboxProps,
+    SpaceProps,
+    LayoutProps,
+    GridGapProps {
   children?: ReactNode;
 }
