@@ -7,7 +7,7 @@ import { ContactProps } from './Contact.types';
 const Contact = ({ children, ...rest }: ContactProps) => {
   return (
     <S.Contact {...rest}>
-      <a href="mailto:jose.sousalves@gmail.com">
+      <a href="mailto:maritosan@gmail.com">
         <Block display="flex" alignItems="center" justifyContent="center">
           <Text textTransform="uppercase">Get in touch</Text>
           {children}
