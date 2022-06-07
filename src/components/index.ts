@@ -1,4 +1,14 @@
+export { default as Bio } from './Bio';
+export { default as Block } from './Block';
 export { default as Box } from './Box';
+export { default as Button } from './Button';
+export { default as Contact } from './Contact';
 export { default as Heading } from './Heading';
+export { default as Hero } from './Hero';
+export { default as ImageBlock } from './ImageBlock';
+export { default as Logo } from './Logo';
+export { default as Navbar } from './Navbar';
+export { default as Socials } from './Socials';
 export { default as Stack } from './Stack';
 export { default as Text } from './Text';
+export { default as WidgetBlock } from './WidgetBlock';
