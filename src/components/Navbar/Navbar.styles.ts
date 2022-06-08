@@ -6,7 +6,6 @@ export const Navbar = styled.nav`
   ${layout}
   ${space}
 
-  z-index: 3;
-
   width: 100%;
+  z-index: 99;
 `;
