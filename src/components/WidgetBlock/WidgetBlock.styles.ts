@@ -4,6 +4,10 @@ import styled from 'styled-components';
 export const Widget = styled.div`
   width: 100%;
   height: 100%;
+  display: none;
+  ${mediaQueries.md} {
+    display: block;
+  }
 `;
 
 export const IFrame = styled.iframe`
@@ -14,6 +18,5 @@ export const IFrame = styled.iframe`
   width: -webkit-fill-available;
   ${mediaQueries.sm} {
     height: 100%;
-    min-width: 480px;
   }
 `;
