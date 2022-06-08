@@ -1,3 +1,4 @@
+import { mediaQueries } from '@styles';
 import styled from 'styled-components';
 
 export const Contact = styled.div`
@@ -9,5 +10,10 @@ export const Contact = styled.div`
     p {
       color: ${({ theme }) => theme.colors.offWhite};
     }
+  }
+
+  display: none;
+  ${mediaQueries.lg} {
+    display: block;
   }
 `;
