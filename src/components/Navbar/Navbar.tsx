@@ -4,6 +4,7 @@ import * as S from './Navbar.styles';
 import Contact from '../Contact';
 import Logo from '../Logo';
 import Store from '../Store';
+import HamburgerIcon from '../HamburgerIcon';
 
 const Navbar = ({ children, ...rest }: NavbarProps) => {
   return (
@@ -11,6 +12,7 @@ const Navbar = ({ children, ...rest }: NavbarProps) => {
       <Logo />
       <Contact />
       <Store />
+      <HamburgerIcon />
       {children}
     </S.Navbar>
   );

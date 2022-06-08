@@ -11,4 +11,5 @@ export interface TextProps extends TypographyProps, SpaceProps, LayoutProps {
   color?: string;
   card?: boolean;
   textBlock?: boolean;
+  mob?: boolean;
 }

@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import { Youtube, Instagram, Facebook } from '@styled-icons/boxicons-logos';
 import { Bandcamp } from '@styled-icons/simple-icons';
+import { mediaQueries } from '@styles';
 
 export const Socials = styled.div`
   display: flex;
@@ -8,7 +9,10 @@ export const Socials = styled.div`
   align-items: center;
   justify-content: center;
   gap: 16px;
-  width: 25vw;
+  width: 100vw;
+  ${mediaQueries.lg} {
+    width: 25vw;
+  }
 `;
 
 export const YTLogo = styled(Youtube)`

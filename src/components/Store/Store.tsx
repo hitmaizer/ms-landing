@@ -5,7 +5,7 @@ import * as S from './Store.styles';
 import { StoreProps } from './Store.types';
 import { useTranslation } from 'react-i18next';
 
-const Store = ({ children, ...rest }: StoreProps) => {
+const Store = ({ children, mob, ...rest }: StoreProps) => {
   const { t } = useTranslation();
   return (
     <S.Store {...rest}>
@@ -23,7 +23,7 @@ const Store = ({ children, ...rest }: StoreProps) => {
           <Text textTransform="uppercase" fontWeight="bold">
             {t('store')}
           </Text>
-          <S.Arrow />
+          <S.Arrow mob={mob} />
           {children}
         </Block>
       </a>
