@@ -7,6 +7,11 @@ import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
 import { translationsEn, translationsPt } from 'src/intl/intl';
 
+import { DefaultSeo } from 'next-seo';
+import SEO from 'src/config/next-seo';
+import Head from 'src/components/Head';
+import { useRouter } from 'next/router';
+
 i18n.use(initReactI18next).init({
   resources: {
     en: { translation: translationsEn },
@@ -18,11 +23,26 @@ i18n.use(initReactI18next).init({
 });
 
 function MyApp({ Component, pageProps }: AppProps) {
+  const { asPath } = useRouter();
+  const page = asPath === '/' ? '' : asPath;
+  const [canonicalUrl] = `https://www.mariosantos.com.pt${page}`.split('?');
   return (
     <>
       <ThemeProvider theme={theme}>
-        <GlobalStyle />
-        <Component {...pageProps} />
+        <DefaultSeo
+          canonical={canonicalUrl}
+          openGraph={{
+            url: canonicalUrl,
+            type: 'website',
+            site_name: 'Mário Santos Group',
+          }}
+          dangerouslySetAllPagesToNoIndex
+          {...SEO}
+        />
+        <Head>
+          <GlobalStyle />
+          <Component {...pageProps} />
+        </Head>
       </ThemeProvider>
     </>
   );
