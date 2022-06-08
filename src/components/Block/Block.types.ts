@@ -15,4 +15,5 @@ export interface BlockProps
   hero?: boolean;
   button?: boolean;
   onClick?: () => unknown;
+  center?: boolean;
 }

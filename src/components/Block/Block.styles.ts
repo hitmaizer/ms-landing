@@ -16,12 +16,21 @@ export const Block = styled.div<BlockProps>`
   min-height: 12vh;
   height: 100%;
   outline-offset: 0.5px;
+  position: relative;
+
+  ${({ center }) =>
+    center &&
+    css`
+      place-content: center;
+    `}
+
   ${({ hero }) =>
     hero &&
     css`
       padding: 0px;
       outline-offset: 0px;
     `};
+
   ${({ button }) =>
     button &&
     css`
