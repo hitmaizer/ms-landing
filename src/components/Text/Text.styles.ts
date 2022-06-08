@@ -36,6 +36,6 @@ export const Text = styled.p<TextProps>`
   ${({ mob }) =>
     mob &&
     css`
-      font-size: 40px;
+      font-size: 32px;
     `}
 `;

@@ -1,18 +1,19 @@
 import { mediaQueries } from '@styles';
 import styled, { css } from 'styled-components';
-import { HamburgerIconProps } from './HamburgerICon.types';
+import { HamburgerIconProps } from './HamburgerIcon.types';
 
 export const Container = styled.div`
   width: 25vw;
   display: block;
+  z-index: 10;
   ${mediaQueries.lg} {
     display: none;
   }
 `;
 
 export const Hamburger = styled.span<HamburgerIconProps>`
-  width: 3em;
-  height: 0.3em;
+  width: 2em;
+  height: 0.1em;
   background-color: ${({ theme }) => theme.colors.mutedGray};
   position: absolute;
   cursor: pointer;
@@ -20,8 +21,8 @@ export const Hamburger = styled.span<HamburgerIconProps>`
   &::before,
   &::after {
     content: '';
-    width: 3em;
-    height: 0.3em;
+    width: 2em;
+    height: 0.1em;
     background-color: ${({ theme }) => theme.colors.mutedGray};
     position: absolute;
     display: block;
@@ -29,14 +30,14 @@ export const Hamburger = styled.span<HamburgerIconProps>`
   }
 
   &::before {
-    top: -12px;
+    top: -8px;
     left: 0%;
     transform-origin: center;
     transform: rotateZ(0deg);
   }
 
   &::after {
-    bottom: -12px;
+    bottom: -8px;
     left: 0%;
     transform-origin: center;
     transform: rotateZ(0deg);
@@ -68,19 +69,23 @@ export const HamburgerContent = styled.div<HamburgerIconProps>`
   position: absolute;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
-  gap: 64px;
+
   width: 100vw;
-  height: 100vh;
+  height: 90vh;
   background-color: ${({ theme }) => theme.colors.purpleBg};
   transform: translateY(-100%);
-  transition: all 300ms ease;
-  z-index: 9;
+  transition: all 600ms ease;
+  z-index: 0;
+  overflow-y: hidden;
+  &::-webkit-scrollbar {
+    display: none;
+  }
 
   ${({ open }) =>
     open === true &&
     css`
-      transform: translateY(12%);
+      transform: translateY(13.5%);
     `}
 `;

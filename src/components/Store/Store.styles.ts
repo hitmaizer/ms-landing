@@ -5,8 +5,8 @@ import { flexbox, gridGap, layout, space } from 'styled-system';
 import { StoreProps } from './Store.types';
 
 export const Arrow = styled(RightArrowAlt)<StoreProps>`
-  width: ${({ mob }) => (mob ? '40px' : '24px')};
-  height: 24px;
+  width: ${({ mob }) => (mob === true ? '40px' : '24px')};
+  height: ${({ mob }) => (mob === true ? '40px' : '24px')};
   color: ${({ theme }) => theme.colors.mutedGray};
   transition: color 300ms ease;
 `;
