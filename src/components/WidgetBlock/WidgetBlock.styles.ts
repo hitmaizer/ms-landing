@@ -1,3 +1,4 @@
+import { mediaQueries } from '@styles';
 import styled from 'styled-components';
 
 export const Widget = styled.div`
@@ -7,8 +8,11 @@ export const Widget = styled.div`
 
 export const IFrame = styled.iframe`
   border: 0;
-  width: 25vw;
-  height: 100%;
+  height: 483px;
   z-index: 2;
-  max-width: 480px;
+  min-width: 480px;
+  width: 100%;
+  ${mediaQueries.sm} {
+    height: 100%;
+  }
 `;
