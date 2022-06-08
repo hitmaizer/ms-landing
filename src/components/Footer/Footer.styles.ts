@@ -1,3 +1,4 @@
+import { mediaQueries } from '@styles';
 import styled from 'styled-components';
 import { flexbox, layout, space } from 'styled-system';
 
@@ -6,5 +7,10 @@ export const Footer = styled.div`
   ${layout}
   ${space}
   width: 100%;
-  height: 18vh;
+  flex-direction: column;
+
+  ${mediaQueries.lg} {
+    flex-direction: row;
+    height: 18vh;
+  }
 `;
