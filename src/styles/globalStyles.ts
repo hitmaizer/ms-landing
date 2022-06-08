@@ -1,5 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
 import reset from 'styled-reset';
+import { mediaQueries } from './theme';
 
 const GlobalStyle = createGlobalStyle`
   ${reset}
@@ -33,7 +34,9 @@ const GlobalStyle = createGlobalStyle`
     html {
       font-family: "Archivo", sans-serif;
       scroll-behavior: smooth;
-      overflow: hidden;
+      ${mediaQueries.lg} {
+        overflow: hidden;
+      }
     }
   }
   
