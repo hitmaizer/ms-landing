@@ -10,9 +10,10 @@ export const IFrame = styled.iframe`
   border: 0;
   height: 483px;
   z-index: 2;
-  min-width: 480px;
-  width: 100%;
+
+  width: -webkit-fill-available;
   ${mediaQueries.sm} {
     height: 100%;
+    min-width: 480px;
   }
 `;

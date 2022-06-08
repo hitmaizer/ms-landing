@@ -16,8 +16,11 @@ export const ImageContainer = styled.div`
   position: relative;
   height: 100%;
   width: 100vw;
+  ${mediaQueries.sm} {
+    width: -webkit-fill-available;
+  }
   ${mediaQueries.md} {
-    width: 53vw;
+    width: -webkit-fill-available;
   }
 
   ${mediaQueries.lg} {
