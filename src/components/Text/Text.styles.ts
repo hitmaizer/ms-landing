@@ -32,4 +32,10 @@ export const Text = styled.p<TextProps>`
       color: ${({ theme }) => theme.colors.mutedGray};
       line-height: 160%;
     `}
+
+  ${({ mob }) =>
+    mob &&
+    css`
+      font-size: 40px;
+    `}
 `;
