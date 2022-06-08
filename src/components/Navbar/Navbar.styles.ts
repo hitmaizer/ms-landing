@@ -5,7 +5,7 @@ export const Navbar = styled.nav`
   ${flexbox}
   ${layout}
   ${space}
-
+  position: relative;
   width: 100%;
-  z-index: 99;
+  z-index: 10;
 `;
