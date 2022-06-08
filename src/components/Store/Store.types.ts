@@ -12,4 +12,5 @@ export interface StoreProps
     LayoutProps,
     GridGapProps {
   children?: ReactNode;
+  mob?: boolean;
 }
