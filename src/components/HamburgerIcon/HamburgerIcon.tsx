@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Block from '../Block';
 import Text from '../Text';
 import * as S from './HamburgerIcon.styles';
@@ -6,14 +6,19 @@ import { HamburgerIconProps } from './HamburgerIcon.types';
 import { useTranslation } from 'react-i18next';
 import Stack from '../Stack';
 import { BCLogo, FBLogo, InstaLogo, YTLogo } from '../Socials/Socials.styles';
+import { useDispatch, useSelector } from 'react-redux';
+import { RootState } from 'src/redux/store';
+import { setIsOpen } from 'src/redux/isOpen';
 
 const HamburgerIcon = ({ children, ...rest }: HamburgerIconProps) => {
-  const [isOpen, setIsOpen] = useState<boolean>(false);
+  const isOpen = useSelector((state: RootState) => state.isOpen.isOpen);
+  const dispatch = useDispatch();
   const { t } = useTranslation();
+
   return (
     <>
       <S.Container>
-        <Block center button onClick={() => setIsOpen(!isOpen)}>
+        <Block center button onClick={() => dispatch(setIsOpen(!isOpen))}>
           <S.Hamburger open={isOpen} {...rest} />
         </Block>
       </S.Container>
