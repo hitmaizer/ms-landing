@@ -13,6 +13,10 @@ export const Socials = styled.div`
   ${mediaQueries.lg} {
     width: 25vw;
   }
+
+  ${mediaQueries.xxl} {
+    width: 18vw;
+  }
 `;
 
 export const YTLogo = styled(Youtube)`
