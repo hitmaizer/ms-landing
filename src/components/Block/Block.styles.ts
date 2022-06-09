@@ -1,3 +1,4 @@
+import { mediaQueries } from '@styles';
 import styled, { css } from 'styled-components';
 import { flexbox, gridGap, layout, space } from 'styled-system';
 import { BlockProps } from './Block.types';
@@ -34,6 +35,10 @@ export const Block = styled.div<BlockProps>`
   ${({ button }) =>
     button &&
     css`
+      padding: 16px;
+      ${mediaQueries.md} {
+        padding: 16px;
+      }
       cursor: pointer;
       min-height: auto;
       place-content: center;
