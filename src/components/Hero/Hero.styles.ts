@@ -6,7 +6,7 @@ export const Hero = styled.main<HeroProps>`
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 88vh;
+  height: 81vh;
 
   ${mediaQueries.md} {
     display: flex;
