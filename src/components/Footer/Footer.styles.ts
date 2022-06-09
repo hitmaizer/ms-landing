@@ -1,8 +1,9 @@
 import { mediaQueries } from '@styles';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import { flexbox, layout, space } from 'styled-system';
+import { FooterProps } from './Footer.types';
 
-export const Footer = styled.div`
+export const Footer = styled.div<FooterProps>`
   ${flexbox}
   ${layout}
   ${space}
@@ -13,4 +14,10 @@ export const Footer = styled.div`
     flex-direction: row;
     height: 18vh;
   }
+
+  ${({ open }) =>
+    open === true &&
+    css`
+      overflow-y: hidden;
+    `}
 `;
