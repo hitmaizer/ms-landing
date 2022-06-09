@@ -86,6 +86,7 @@ export const HamburgerContent = styled.div<HamburgerIconProps>`
   ${({ open }) =>
     open === true &&
     css`
-      transform: translateY(13.5%);
+      overflow-y: hidden;
+      transform: translateY(13%);
     `}
 `;
