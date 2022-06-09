@@ -1,8 +1,47 @@
 import styled, { keyframes } from 'styled-components';
 
-const spin = keyframes`
-  0%  { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+const loader = keyframes`
+  0% {
+    transform: rotate(0deg);
+  }
+  
+  25% {
+    transform: rotate(180deg);
+  }
+  
+  50% {
+    transform: rotate(180deg);
+  }
+  
+  75% {
+    transform: rotate(360deg);
+  }
+  
+  100% {
+    transform: rotate(360deg);
+  }
+`;
+
+const loaderInner = keyframes`
+  0% {
+    height: 0%;
+  }
+  
+  25% {
+    height: 0%;
+  }
+  
+  50% {
+    height: 100%;
+  }
+  
+  75% {
+    height: 100%;
+  }
+  
+  100% {
+    height: 0%;
+  }
 `;
 
 export const Container = styled.div`
@@ -17,11 +56,17 @@ export const Container = styled.div`
   z-index: 99;
 `;
 
-export const Spinner = styled.div`
-  border: 16px solid ${({ theme }) => theme.colors.mutedGray};
-  border-top: 16px solid ${({ theme }) => theme.colors.offWhite};
-  border-radius: 50%;
-  width: 130px;
-  height: 130px;
-  animation: ${spin} 2s infinite ease-in-out;
+export const Loader = styled.div`
+  width: 30px;
+  height: 30px;
+  position: relative;
+  border: 4px solid ${({ theme }) => theme.colors.offWhite};
+  animation: ${loader} 2s infinite ease;
+`;
+
+export const LoaderInner = styled.div`
+  vertical-align: top;
+  width: 100%;
+  background-color: #fff;
+  animation: ${loaderInner} 2s infinite ease-in;
 `;

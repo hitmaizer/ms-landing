@@ -5,8 +5,10 @@ import { SpinnerProps } from './Spinner.types';
 const Spinner = ({ children, ...rest }: SpinnerProps) => {
   return (
     <S.Container {...rest}>
-      <S.Spinner />
-      {children}
+      <S.Loader>
+        <S.LoaderInner />
+        {children}
+      </S.Loader>
     </S.Container>
   );
 };
