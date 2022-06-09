@@ -1,8 +1,12 @@
-import { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle, css } from 'styled-components';
 import reset from 'styled-reset';
 import { mediaQueries } from './theme';
 
-const GlobalStyle = createGlobalStyle`
+interface globalStyleProps {
+  open?: boolean;
+}
+
+const GlobalStyle = createGlobalStyle<globalStyleProps>`
   ${reset}
   
   html {
@@ -52,6 +56,12 @@ const GlobalStyle = createGlobalStyle`
   }
   body {
     overflow-x: hidden;
+    
+    ${({ open }) =>
+      open === true &&
+      css`
+        position: fixed;
+      `}
   }
   
 `;
