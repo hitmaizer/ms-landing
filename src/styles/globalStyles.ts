@@ -1,6 +1,7 @@
 import { createGlobalStyle, css } from 'styled-components';
 import reset from 'styled-reset';
 import { mediaQueries } from './theme';
+import theme from 'src/styles/theme';
 
 interface globalStyleProps {
   open?: boolean;
@@ -36,7 +37,7 @@ const GlobalStyle = createGlobalStyle<globalStyleProps>`
   
   @supports (font-variation-settings: normal) {
     html {
-      font-family: "Archivo", sans-serif;
+      font-family: "Space Grotesk", sans-serif;
       scroll-behavior: smooth;
       ${mediaQueries.lg} {
         overflow: hidden;
@@ -56,6 +57,7 @@ const GlobalStyle = createGlobalStyle<globalStyleProps>`
   }
   body {
     overflow-x: hidden;
+    background-color: ${theme.colors.purpleBg};
     
     ${({ open }) =>
       open === true &&
