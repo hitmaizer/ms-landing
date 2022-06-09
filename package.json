@@ -12,6 +12,7 @@
   "dependencies": {
     "@fontsource/archivo-black": "^4.5.7",
     "@fontsource/space-grotesk": "^4.5.8",
+    "@reduxjs/toolkit": "^1.8.2",
     "@styled-icons/boxicons-logos": "^10.38.0",
     "@styled-icons/boxicons-regular": "^10.38.0",
     "@styled-icons/simple-icons": "^10.45.0",
@@ -22,6 +23,7 @@
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-i18next": "^11.17.0",
+    "react-redux": "^8.0.2",
     "styled-components": "^5.3.5",
     "styled-reset": "^4.4.1",
     "styled-system": "^5.1.5"
