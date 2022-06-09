@@ -1,7 +1,8 @@
 import { mediaQueries } from '@styles';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
+import { HeroProps } from './Hero.types';
 
-export const Hero = styled.section`
+export const Hero = styled.main<HeroProps>`
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -12,10 +13,16 @@ export const Hero = styled.section`
     flex-direction: row;
     align-items: center;
     width: 100%;
-    height: 58vh;
+    height: 60vh;
   }
 
   ${mediaQueries.lg} {
     height: 70vh;
   }
+
+  ${({ open }) =>
+    open === true &&
+    css`
+      overflow-y: hidden;
+    `}
 `;

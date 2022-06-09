@@ -1,6 +1,5 @@
 import { ReactNode } from 'react';
 
-export interface HeroProps {
+export interface ContainerProps {
   children?: ReactNode;
-  open?: boolean;
 }
