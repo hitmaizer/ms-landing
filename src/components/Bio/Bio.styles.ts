@@ -6,4 +6,8 @@ export const Bio = styled.div`
   ${mediaQueries.lg} {
     width: 65vw;
   }
+
+  ${mediaQueries.xxl} {
+    width: 72vw;
+  }
 `;
