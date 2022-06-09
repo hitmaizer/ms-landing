@@ -58,6 +58,8 @@ const GlobalStyle = createGlobalStyle<globalStyleProps>`
   body {
     overflow-x: hidden;
     background-color: ${theme.colors.purpleBg};
+    width: 100vw;
+    height: 100vh;
     
     ${({ open }) =>
       open === true &&
