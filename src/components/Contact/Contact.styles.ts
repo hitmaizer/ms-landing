@@ -16,4 +16,8 @@ export const Contact = styled.div`
   ${mediaQueries.lg} {
     display: block;
   }
+
+  ${mediaQueries.xxl} {
+    width: 9vw;
+  }
 `;
