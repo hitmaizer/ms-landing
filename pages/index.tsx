@@ -1,25 +1,23 @@
 import type { NextPage } from 'next';
-import { Router } from 'next/router';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Footer from 'src/components/Footer';
 import Hero from 'src/components/Hero';
 import Navbar from 'src/components/Navbar';
+import Spinner from 'src/components/Spinner';
 
 const Home: NextPage = () => {
-  const [loading, setLoading] = useState<boolean>(false);
+  const [loading, setLoading] = useState<boolean>(true);
 
-  Router.events.on('routeChangeStart', () => {
-    setLoading(true);
-  });
-
-  Router.events.on('routeChangeComplete', () => {
-    setLoading(false);
-  });
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false);
+    }, 1000);
+  }, []);
 
   return (
     <>
       {loading ? (
-        <p>Loading...</p>
+        <Spinner />
       ) : (
         <>
           <Navbar display="flex" />
