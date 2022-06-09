@@ -20,7 +20,7 @@ const theme = {
     offWhite: '#F2F2F2',
     mutedGray: '#777981',
     stroke: '#2A2A2A',
-    purpleBg: '#121111',
+    purpleBg: '#16151B',
   },
 
   // default fontSizes

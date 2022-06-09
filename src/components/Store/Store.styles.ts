@@ -29,4 +29,8 @@ export const Store = styled.div`
   ${mediaQueries.lg} {
     display: block;
   }
+
+  ${mediaQueries.xxl} {
+    width: 9vw;
+  }
 `;
