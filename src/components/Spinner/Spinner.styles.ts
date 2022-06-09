@@ -56,7 +56,8 @@ export const Container = styled.div`
   z-index: 99;
 `;
 
-export const Loader = styled.div`
+export const Loader = styled.span`
+  display: inline-block;
   width: 30px;
   height: 30px;
   position: relative;
@@ -64,8 +65,9 @@ export const Loader = styled.div`
   animation: ${loader} 2s infinite ease;
 `;
 
-export const LoaderInner = styled.div`
+export const LoaderInner = styled.span`
   vertical-align: top;
+  display: inline-block;
   width: 100%;
   background-color: #fff;
   animation: ${loaderInner} 2s infinite ease-in;
