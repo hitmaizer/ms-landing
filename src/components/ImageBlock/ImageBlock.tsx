@@ -8,7 +8,11 @@ const ImageBlock = ({ children, hero, ...rest }: ImageBlockProps) => {
     <S.ImageBlock {...rest}>
       <Block hero={hero}>
         <S.ImageContainer>
-          <S.StyledImage src="/placeholder.png" layout="fill" />
+          <S.StyledImage
+            src="/placeholder.png"
+            layout="fill"
+            alt="hero-cover"
+          />
         </S.ImageContainer>
         {children}
       </Block>

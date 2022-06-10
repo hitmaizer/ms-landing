@@ -1,3 +1,4 @@
+import { rem } from 'src/hooks/useRem';
 import styled, { css } from 'styled-components';
 import { color, fontWeight, space, style, typography } from 'styled-system';
 
@@ -19,8 +20,8 @@ export const Text = styled.p<TextProps>`
   ${fontWeight}
 
   font-family: ${({ theme }) => theme.fonts.text};
-  font-size: 16px;
-  line-height: 24px;
+  font-size: ${rem(16)};
+  line-height: ${rem(24)};
   max-width: 75ch;
   color: ${({ theme }) => theme.colors.mutedGray};
   transition: color 300ms ease;
@@ -36,6 +37,6 @@ export const Text = styled.p<TextProps>`
   ${({ mob }) =>
     mob &&
     css`
-      font-size: 32px;
+      font-size: ${rem(32)};
     `}
 `;

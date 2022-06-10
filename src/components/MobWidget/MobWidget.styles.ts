@@ -1,4 +1,5 @@
 import { mediaQueries } from '@styles';
+import { rem } from 'src/hooks/useRem';
 import styled from 'styled-components';
 
 export const WidgetContainer = styled.div`
@@ -13,5 +14,5 @@ export const WidgetContainer = styled.div`
 export const Widget = styled.iframe`
   border: 0;
   width: 100%;
-  height: 120px;
+  height: ${rem(120)};
 `;

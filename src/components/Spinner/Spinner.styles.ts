@@ -1,3 +1,4 @@
+import { rem } from 'src/hooks/useRem';
 import styled, { keyframes } from 'styled-components';
 
 const loader = keyframes`
@@ -58,10 +59,10 @@ export const Container = styled.div`
 
 export const Loader = styled.span`
   display: inline-block;
-  width: 30px;
-  height: 30px;
+  width: ${rem(30)};
+  height: ${rem(30)};
   position: relative;
-  border: 4px solid ${({ theme }) => theme.colors.offWhite};
+  border: ${rem(4)} solid ${({ theme }) => theme.colors.offWhite};
   animation: ${loader} 2s infinite ease;
 `;
 

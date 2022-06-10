@@ -1,12 +1,13 @@
 import { RightArrowAlt } from '@styled-icons/boxicons-regular';
 import { mediaQueries } from '@styles';
+import { rem } from 'src/hooks/useRem';
 import styled from 'styled-components';
 import { flexbox, gridGap, layout, space } from 'styled-system';
 import { StoreProps } from './Store.types';
 
 export const Arrow = styled(RightArrowAlt)<StoreProps>`
-  width: ${({ mob }) => (mob === true ? '40px' : '24px')};
-  height: ${({ mob }) => (mob === true ? '40px' : '24px')};
+  width: ${({ mob }) => (mob === true ? rem(40) : rem(24))};
+  height: ${({ mob }) => (mob === true ? rem(40) : rem(24))};
   color: ${({ theme }) => theme.colors.mutedGray};
   transition: color 300ms ease;
 `;

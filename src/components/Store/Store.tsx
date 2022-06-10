@@ -4,6 +4,7 @@ import Text from '../Text';
 import * as S from './Store.styles';
 import { StoreProps } from './Store.types';
 import { useTranslation } from 'react-i18next';
+import { rem } from 'src/hooks/useRem';
 
 const Store = ({ children, mob, ...rest }: StoreProps) => {
   const { t } = useTranslation();
@@ -17,7 +18,7 @@ const Store = ({ children, mob, ...rest }: StoreProps) => {
         <Block
           display="flex"
           alignItems="center"
-          gridGap="8px"
+          gridGap={rem(8)}
           justifyContent="center"
         >
           <Text textTransform="uppercase" fontWeight="bold">
