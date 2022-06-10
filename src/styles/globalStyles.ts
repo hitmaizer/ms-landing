@@ -73,7 +73,7 @@ const GlobalStyle = createGlobalStyle<globalStyleProps>`
     ${({ open }) =>
       open === true &&
       css`
-        position: fixed;
+        // position: fixed;
       `}
   }
   
