@@ -39,4 +39,9 @@ export const Text = styled.p<TextProps>`
     css`
       font-size: ${rem(32)};
     `}
+
+    &::selection {
+    background-color: ${({ theme }) => theme.colors.offWhite};
+    color: ${({ theme }) => theme.colors.purpleBg};
+  }
 `;
