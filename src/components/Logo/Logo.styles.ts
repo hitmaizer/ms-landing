@@ -11,5 +11,24 @@ export const Logo = styled.div`
 `;
 
 export const SImage = styled(Image)`
-  padding-left: 3% !important;
+  width: 100%;
+`;
+
+export const LogoContainer = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  position: relative;
+  margin-left: 2%;
+  min-width: 70%;
+  ${mediaQueries.sm} {
+    min-width: 50%;
+  }
+  ${mediaQueries.md} {
+    min-width: 60%;
+  }
+  ${mediaQueries.lg} {
+    min-width: 30%;
+  }
 `;
