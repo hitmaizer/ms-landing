@@ -19,5 +19,6 @@ export const Footer = styled.div<FooterProps>`
     open === true &&
     css`
       overflow-y: hidden;
+      position: fixed;
     `}
 `;

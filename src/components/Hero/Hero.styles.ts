@@ -24,5 +24,6 @@ export const Hero = styled.main<HeroProps>`
     open === true &&
     css`
       overflow-y: hidden;
+      position: fixed;
     `}
 `;
