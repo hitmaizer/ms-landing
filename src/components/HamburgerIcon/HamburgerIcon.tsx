@@ -9,6 +9,7 @@ import { BCLogo, FBLogo, InstaLogo, YTLogo } from '../Socials/Socials.styles';
 import { useDispatch, useSelector } from 'react-redux';
 import { RootState } from 'src/redux/store';
 import { setIsOpen } from 'src/redux/isOpen';
+import { rem } from 'src/hooks/useRem';
 
 const HamburgerIcon = ({ children, ...rest }: HamburgerIconProps) => {
   const isOpen = useSelector((state: RootState) => state.isOpen.isOpen);
@@ -37,7 +38,7 @@ const HamburgerIcon = ({ children, ...rest }: HamburgerIconProps) => {
             target="_blank"
             rel="noreferrer"
           >
-            <Stack display="flex" gridGap="24px" alignItems="center">
+            <Stack display="flex" gridGap={rem(24)} alignItems="center">
               <Text textTransform="uppercase" fontWeight="bold" mob>
                 {t('store')}
               </Text>
@@ -47,7 +48,7 @@ const HamburgerIcon = ({ children, ...rest }: HamburgerIconProps) => {
         <Block>
           <Stack
             display="flex"
-            gridGap="24px"
+            gridGap={rem(24)}
             alignItems="center"
             width="100%"
             placeContent="center"

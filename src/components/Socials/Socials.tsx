@@ -1,4 +1,5 @@
 import React from 'react';
+import { rem } from 'src/hooks/useRem';
 import Block from '../Block';
 import * as S from './Socials.styles';
 import { SocialsProps } from './Socials.types';
@@ -10,7 +11,7 @@ const Socials = ({ children, ...rest }: SocialsProps) => {
         display="flex"
         alignItems="center"
         justifyContent="center"
-        gridGap="32px"
+        gridGap={rem(32)}
       >
         <a
           href="https://www.youtube.com/channel/UCPTVjhv0hpFRH9DGgdsOnwQ"

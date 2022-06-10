@@ -1,4 +1,5 @@
 import { mediaQueries } from '@styles';
+import { rem } from 'src/hooks/useRem';
 import styled from 'styled-components';
 
 export const Widget = styled.div`
@@ -12,7 +13,7 @@ export const Widget = styled.div`
 
 export const IFrame = styled.iframe`
   border: 0;
-  height: 483px;
+  height: ${rem(483)};
   z-index: 2;
 
   width: -webkit-fill-available;

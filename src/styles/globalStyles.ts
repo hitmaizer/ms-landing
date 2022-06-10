@@ -61,6 +61,15 @@ const GlobalStyle = createGlobalStyle<globalStyleProps>`
     width: 100vw;
     height: 100vh;
     
+    // hide scrollbar 
+    overflow-y: scroll;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    &::-webkit-scrollbar { /* WebKit */
+    width: 0;
+    height: 0;
+    }
+    
     ${({ open }) =>
       open === true &&
       css`
